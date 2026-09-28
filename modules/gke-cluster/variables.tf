@@ -31,3 +31,9 @@ variable "zone" {
   description = "GCP Zone for the GKE cluster (e.g., us-central1-a)"
   default     = "us-central1-a"
 }
+
+variable "deletion_protection" {
+  type        = bool
+  description = "Whether deletion protection is enabled for the GKE cluster"
+  default     = false
+}

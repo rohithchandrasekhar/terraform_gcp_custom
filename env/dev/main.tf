@@ -5,7 +5,8 @@ module "gke" {
   cluster_name = "dev-gke-cluster"
   zone       = "us-central1-a"
   node_count   = 1
-  machine_type = "e2-small"
+  machine_type = "e2-small" 
+  deletion_protection = false
 }
 
 output "dev_cluster_endpoint" {

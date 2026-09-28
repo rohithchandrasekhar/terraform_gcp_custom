@@ -6,6 +6,7 @@ resource "google_container_cluster" "primary" {
   # We create a separately managed node pool, so we remove the default node pool immediately
   remove_default_node_pool = true
   initial_node_count       = 1
+  
 }
 
 resource "google_container_node_pool" "primary_nodes" {
