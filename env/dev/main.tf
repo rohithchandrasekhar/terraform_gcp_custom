@@ -3,7 +3,7 @@ module "gke" {
 
   project_id   = var.project_id
   cluster_name = "dev-gke-cluster"
-  region       = "us-central1"
+  zone       = "us-central1-a"
   node_count   = 1
   machine_type = "e2-small"
 }

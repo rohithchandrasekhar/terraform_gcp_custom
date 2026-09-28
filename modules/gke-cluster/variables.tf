@@ -25,3 +25,9 @@ variable "machine_type" {
   description = "GCE instance type for cluster nodes"
   default     = "e2-small"
 }
+
+variable "zone" {
+  type        = string
+  description = "GCP Zone for the GKE cluster (e.g., us-central1-a)"
+  default     = "us-central1-a"
+}
