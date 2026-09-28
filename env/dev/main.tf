@@ -2,7 +2,7 @@ module "gke" {
   source = "../../modules/gke-cluster"
 
   project_id   = var.project_id
-  cluster_name = "dev-gke-cluster"
+  cluster_name = "dev-gke-zone-cluster"
   zone       = "us-central1-a"
   node_count   = 1
   machine_type = "e2-small" 
